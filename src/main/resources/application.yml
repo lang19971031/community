@@ -19,6 +19,14 @@ spring:
       minimum-idle: 5
       idle-timeout: 30000
 
+  #配置邮箱
+  mail:
+    host: smtp.qq.com
+    port: 465
+    username: 993923384@qq.com
+    password: njykzrnxsgxmbbgc
+    protocol: smtps
+
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.nowcoder.community.entity
@@ -31,3 +39,8 @@ logging:
     cn.itcast: debug
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
+
+#community
+community:
+  path:
+    domain: localhost:8080
